@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pavan Sree Pichuka</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pavan Sree Pichuka</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.JPG" alt="Pavan Sree profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pavan Sree Pichuka</h1>
+        <p class="section__text__p2">DevOps Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Pavansree_Devops_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pavansree/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Pavan-12062000'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2 years <br />DevOps and Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree<br />MEng Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              A dedicated and fast learner who eagerly embraces new challenges and continuously seeks to expand
+              skills in software engineering and development. My goal is to secure a challenging position within a
+              professional organization, where I can not only enhance my skills but also align with the company's
+              values and goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class = "section__text__p1">My</p>
+      <h1 class="title">Experience</h1>
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h2>Technical Support Intern</h2>
+              <h3 style="display: inline-block; margin-right: 230px;">GAOTek Inc.</h3>
+              <h3 style="display: inline-block;">May 2024 - August 2024</h3>
+              <li>Primarily worked as a Backend Developer for an electrical equipment manufacturing client web-based
+                application project.</li>
+              <li>Worked on technologies like NodeJS, Python, and ExpressJS, supported frontend in implementing upload
+                and download features using AngularJS, and used AWS S3.</li>
+              <li>Implemented data conversion from Excel to JSON to perform quality validations in the backend.</li>
+              <li>Developed a RESTful API with a routing algorithm to upload the data to the database after validation or
+                routing them to an Excel file with failed records with error results.</li>
+              <li>Additionally, designed and worked on code to eliminate the redundancy of records while bulk uploading the
+                data into the database.</li>
+              <li>Troubleshooted performance issues. optimized SQL query to reduce the latency substantially.</li>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>Digital Specialist Engineer</h2>
+              <h3>Infosys Ltd.</h3>
+              <h3 style="display: inline-block; margin-right: 210px;">Project 1</h3>
+              <h3 style="display: inline-block;">September 2022- August 2023</h3>
+              <h3>Aim: Project aims to decouple the applications that have a shared database and resources and upgrade the existing
+                application.</h3>
+              <li>Primarily worked as a <b>DevOps Engineer</b> for the client project, contributing significantly to its success.</li>
+              <li>Experience in a wide range of tasks, including analysis, design, and implementation of terraform
+                (Infrastructure as Code) to build infrastructure on the AWS cloud platform.</li>
+              <li><b>Developed terraform modules</b> by collaborating with product and development teams for building
+                infrastructure (IaC) to an application on AWS cloud which includes services like VPC, lambda, S3, EC2,
+                RDS, API Gateway, and cloudwatch enhancing infrastructure scalability and reliability.</li>
+              <li>Additionally, I designed and implemented a <b>data migration plan</b> to automate data transfer from an on-prime
+                MySql server to PostgreSQL using AWS Database Migration Serice(DMS).</li>
+              <li>Troubleshooted issues in the CI process during production build and release and
+                collaborated with development teams and DevOps colleagues to modernize existing infrastructure and
+                deploy applications on cloud-native microservices architecture.</li>
+              <li>Used SonarQube plugin for unit testing, checking code quality, 
+                Developed and maintained the automated CI/CD pipeline using Jenkins and GitHub actions.</li>
+              <li>Managed deploying containers on Docker, and also developed repeatable processes for automation,
+                configuration, monitoring, and alerting using Ansible.</li>
+              <!-- <h3 style="display: inline-block; margin-right: 235px;">Project 2</h3>
+              <h3 style="display: inline-block;">October 2021- August 2022</h3>
+              <h3>Aim: Project aims to build an application which analyzes and compare various test results performed on vehicle parts, both at the
+                manufacturer's and client's facilities</h3> -->
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h2>Digital Specialist Engineer</h2>
+              <h3>Infosys Ltd.</h3>
+              <h3 style="display: inline-block; margin-right: 235px;">Project 2</h3>
+              <h3 style="display: inline-block;">October 2021- August 2022</h3>
+              <h3>Aim: Project aims to build an application which analyzes and compare various test results performed on vehicle parts, both at the
+                manufacturer's and client's facilities.</h3>
+              <li>Primarily worked as a <b>Full Stack Developer</b> for the automobile client Web-based Applications project,
+                contributing significantly to its success.</li>
+              <li>Experience encompassed a wide range of tasks, including the design, and implementation of responsive
+                webpages by collaborating with website stakeholders, and UX/UI designers.</li>
+              <li>s responsible for developing responsive webpages that are scalable, and efficient using TypeScript, and
+                Angular.js, and integrating with REST APIs.</li>
+              <li>Was involved in designing and documentation of microservices architecture, and developing RESTful APIs
+                and server-side logic using Node.js, and Python, ensuring seamless integration with databases.</li>
+              <li>Crafted database queries, scripts, and stored procedures to support various project aspects
+                and troubleshoot the latency issues in the execution of SQL queries, optimized the SQL query, and reduced
+                the latency by 5%, with increased performance.</li>
+              <li>Written unit test scripts using Mocha and Chai for the backend and Karma, and Jasmine
+                for the front end, created bugs in JIRA, documented procedures in Confluenceand maintained code quality
+                >95% through monitoring SonarQube.
+                </li>
+            </div>
+          </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-container">
+        <div class="card" onclick="showModal('aws-cloud-practitioner')">
+          <img src="./assets//cloud_practitioner.png" alt="AWS Logo" class="certification-logo" />
+          <h5>AWS Cloud Practitioner</h5>
+          <p>Certification Date: 2022</p>
+        </div>
+    
+        <div class="card" onclick="showModal('aws-developer-associate')">
+          <img src="./assets/developer_associate.png" alt="AWS Developer Logo" class="certification-logo" />
+          <h5>AWS Developer Associate</h5>
+          <p>Infosys Certified</p>
+        </div>
+    
+        <div class="card" onclick="showModal('mongodb-developer')">
+          <img src="./assets/mongoDB.png" alt="MongoDB Logo" class="certification-logo" />
+          <h5>MongoDB Developer</h5>
+          <p>Infosys Certified</p>
+        </div>
+    
+        <div class="card" onclick="showModal('frontend-web-developer')">
+          <img src="./assets/FEWB.png" alt="Front-End Logo" class="certification-logo" />
+          <h5>Front-End Web Developer</h5>
+          <p>Infosys Certified</p>
+        </div>
+      </div>
+    
+      <!-- Modals for each certification -->
+      <div id="aws-cloud-practitioner" class="certification-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('aws-cloud-practitioner')">&times;</span>
+          <h2>AWS Cloud Practitioner</h2>
+          <p>Certified in 2022</p>
+          <a href="https://github.com/Pavan-12062000/Certifications/blob/main/AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    
+      <div id="aws-developer-associate" class="certification-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('aws-developer-associate')">&times;</span>
+          <h2>AWS Developer Associate</h2>
+          <p>Infosys Certified</p>
+          <a href="https://github.com/Pavan-12062000/Certifications/blob/main/ITMS-e-Certificate%20-%20AWS%20Developer%20Associate.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    
+      <div id="mongodb-developer" class="certification-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('mongodb-developer')">&times;</span>
+          <h2>MongoDB Developer</h2>
+          <p>Infosys Certified</p>
+          <a href="https://github.com/Pavan-12062000/Certifications/blob/main/ITMS-e-Certificate%20-%20Mongo%20DB.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    
+      <div id="frontend-web-developer" class="certification-modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('frontend-web-developer')">&times;</span>
+          <h2>Front-End Web Developer</h2>
+          <p>Infosys Certified</p>
+          <a href="https://github.com/Pavan-12062000/Certifications/blob/main/ITMS-e-Certificate%20-%20FEWD.pdf" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">DevOps Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Terraform (HCL)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS Cloud Formation</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jenkins</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Type Script</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Script</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Database Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ORACLE</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Mongo DB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="about-containers"></div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Agile / JIRA</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JIRA</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Confluence</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SDLC</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/lambda.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Cost optimization using Lambda</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pavan-12062000/AWS_Cost_Optimization'">Github</button>
+              <button class="btn btn-color-2 project-btn" id="read-more-btn-1" 
+              onclick="location.href = 'https://github.com/Pavan-12062000/AWS_Cost_Optimization/blob/main/README.md'">Read More</button>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/ec2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Customized EC2 instance</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pavan-12062000/Infrastructure_using_Terraform'">Github</button>
+              <button class="btn btn-color-2 project-btn" id="read-more-btn-2" 
+              onclick="location.href = 'https://github.com/Pavan-12062000/Infrastructure_using_Terraform/blob/main/README.md'">Read More</button>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.jpeg" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="skills-sub-title project-title">Logistics Website using MEAN Stack</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Pavan-12062000/logistics'">Github</button>
+              <button class="btn btn-color-2 project-btn" id="read-more-btn-3">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ppavansree@gmail.com">ppavansree@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/pavansree/'">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pavan Sree Pichuka. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
